@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gitserver="seuserver.com.br"        # Somente o domínio
+gitserver="seuserver.com.br"        # Somente o domínio ou IP
 usuario="root"                      # Nome de usuário
 dict="/usr/share/wordlists/wl.txt"  # Dicionário de senhas
 
